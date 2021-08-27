@@ -1,0 +1,36 @@
+module MoneticoPaiement
+  ALLOWED_PARAMS = %i{
+    code-retour
+    MAC
+    TPE
+    montant
+    montantestime
+    reference
+    texte-libre
+    date
+    cvx
+    vld
+    brand
+    numauto
+    authentification
+    usage
+    typecompte
+    ecard
+    motifrefus
+    motifrefusautorisation
+    originecb
+    bincb
+    hpancb
+    ipclient
+    originetr
+    montantech
+    numero_dossier
+    typefacture
+    filtragecause
+    filtragevaleur
+    filtrage_etat
+    cbenregistree
+    cbmasquee
+    modepaiement
+  }
+end
