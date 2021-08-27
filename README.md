@@ -1,8 +1,6 @@
 # MoneticoPaiement
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/monetico_paiement`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+MoneticoPaiement is a gem to ease credit card payment with [Monetico Paiement](https://www.monetico-paiement.fr/).
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The EPT can be configured in an initialiser (`config/initializers/monetico_paiement.rb`):
+
+```ruby
+MoneticoPaiement.configure do |config|
+  config.hmac_key = "################################"
+  config.ept_number = "######"
+  config.company_code = "########"
+
+  config.env = :test # or :production
+end
+```
 
 ## Development
 
